@@ -37,4 +37,8 @@ function rps(item1, item2) {
     }
 }
 
+function rpsSelect(theList) {
+	return rps(theList[0],theList[1])
+}
 console.log(rps('Chuck Norris','Mr.T'))
+console.log(rpsSelect(['Coke','Pepsi']))
