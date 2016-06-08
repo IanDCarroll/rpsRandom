@@ -37,8 +37,10 @@ def rps(item1, item2):
     else: #item1choice == 'Scissors!' and item2choice == 'Rock!':
 	#print 'Scissors are broken by Rock!'
 	return item2
-    
-#def rpsSelect():
+
+#only a 2-item list ATM...
+def rpsSelect(theList):
+	return rps(theList[0],theList[1])
 
 #def rpsShuffl():
 
@@ -48,6 +50,7 @@ def main():
     #if statements to determine shuffl or select
     #just a test with batman and superman. Which is really better?:
     print rps('Batman', 'Superman')
+    print rpsSelect(['Ketchup','Mustard'])
 
 if __name__ == '__main__':
     main()
