@@ -40,7 +40,10 @@ def rps(item1, item2):
 
 #only a 2-item list ATM...
 def rpsSelect(theList):
+    if len(theList) == 2:
 	return rps(theList[0],theList[1])
+    else:
+	return 'Only 2 items ATM...'
 
 #def rpsShuffl():
 
