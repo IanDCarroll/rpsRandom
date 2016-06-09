@@ -38,7 +38,11 @@ function rps(item1, item2) {
 }
 
 function rpsSelect(theList) {
+    if (theList.length == 2) {
 	return rps(theList[0],theList[1])
+    } else {
+	return 'Cant do more than 2 right now...'
+    }
 }
 console.log(rps('Chuck Norris','Mr.T'))
 console.log(rpsSelect(['Coke','Pepsi']))
