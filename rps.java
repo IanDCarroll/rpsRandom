@@ -2,7 +2,8 @@
 
 /*
 class random {
-    //random function goes here.
+    //random function goes here. 
+    //But looks like I have to first write a constructor
 }
 */
 
