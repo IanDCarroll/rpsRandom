@@ -39,14 +39,21 @@ function rps(item1, item2) {
 
 function rpsSelect(theList) {
     var theChosen = theList,
-	end = theChosen.length,
-	chop = Math.ceil(end / 2),
-	winner;
-    //always selects else statement
-    while (theChosen.length > 1) {
-	winner = rps('0','1');
-	if (winner === '1') { theChosen = theChosen.slice(chop,end); }
-	else { TheChosen = theChosen.slice(0,chop); }  
+	end = theChosen.length;
+	//console.log(end); //<runs. (2)
+    var chop = Math.ceil(end / 2);
+	//console.log(chop); //<runs. (1)
+    var winner = rps('first','last');
+	//console.log(winner); //<runs
+    //infinite loop. //it's something to do with this while loop.
+    while (end > 1) {
+	if (winner === 'last') { 
+		theChosen = theChosen.slice(chop,end);
+	} else if (winner === 'first'){ 
+		TheChosen = theChosen.slice(0,chop);
+	}  else {
+	        console.log("winner not first or last");
+	}
     }
     return theChosen
 }
