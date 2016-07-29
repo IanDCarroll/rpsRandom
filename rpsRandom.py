@@ -88,27 +88,6 @@ def rps3(item1,item2,item3):
     else: #if i3Thro == 'Paper!' and i1Thro == 'Rock!' and i2Thro == i3Thro:
 	return rps(item3,item2)
 
-#Doesn't work right now. Busy trying to make it do more (and less) than 2.
-def rpsSelect(theList):
-    winList = []
-    count = 0
-    while len(theList) > 0:
-	winList.append([])
-	for i in range(0,(len(theList)-1)):
-	    if len(theList) == 3:
-		winList[count].append(theList.pop([rps3(0,1,2)]))
-	    elif i % 2 == 0:
-		winList[count].append(theList.pop([rps(i,(i+1))]))
-	count += 1
-    for j in range(0,len(winList)):
-	if len(winList[j]) == 1:
-	    return winList[j]
-	else:
-	    return 'Couldn\'t find the win'
-
-#def rpsShuffl(theList):
-
-
 def main():
     #if statements to determine data type to be shuffled.
 

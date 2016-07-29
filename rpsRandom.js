@@ -36,7 +36,7 @@ function rps(item1, item2) {
 	return item2;
     }
 }
-
+/*
 function rpsSelect(theList) {
     var theChosen = theList,
 	end = theChosen.length;
@@ -57,6 +57,6 @@ function rpsSelect(theList) {
     }
     return theChosen
 }
-
+*/
 console.log(rps('Chuck Norris','Mr.T'));
 console.log(rpsSelect(['Coke','Pepsi']));
